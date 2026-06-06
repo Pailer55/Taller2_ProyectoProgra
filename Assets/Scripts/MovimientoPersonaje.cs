@@ -7,6 +7,8 @@ public class MovimientoPersonaje : MonoBehaviour
     [Header("Movimiento")]
     public float velocidadLateral = 5f;
     public float velocidadAdelante = 5f;
+    public float fuerzaSalto = 7f;
+    private bool estaEnSuelo = true;
 
     private Rigidbody rb;
 
@@ -18,6 +20,23 @@ public class MovimientoPersonaje : MonoBehaviour
     void Update()
     {
         MoverLateral();
+        Saltar();
+    }
+
+    void Saltar()
+{
+    if (Input.GetKeyDown(KeyCode.Space) && estaEnSuelo)
+    {
+        rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
+    }
+}
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Suelo"))
+        {
+            estaEnSuelo = true;
+        }
     }
 
     void MoverLateral()
