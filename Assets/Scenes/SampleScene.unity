@@ -486,11 +486,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &728915226 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6163566633802428932, guid: 89cf2a2e7ca12de4785ab2251c66369e, type: 3}
-  m_PrefabInstance: {fileID: 7769919830049983156}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &732551705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,8 +1275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a8113052e5eb064e9e76fedee8b4fbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 728915226}
+  bulletPrefab: {fileID: 6163566633802428932, guid: 89cf2a2e7ca12de4785ab2251c66369e, type: 3}
   fireRate: 0.5
+  velocidadProyectil: 20
 --- !u!1 &2153343464291103341
 GameObject:
   m_ObjectHideFlags: 0
