@@ -486,6 +486,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &728915226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6163566633802428932, guid: 89cf2a2e7ca12de4785ab2251c66369e, type: 3}
+  m_PrefabInstance: {fileID: 7769919830049983156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &732551705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1059,7 @@ GameObject:
   - component: {fileID: 1893792318861761409}
   - component: {fileID: 1893792318861761410}
   - component: {fileID: 1893792318861761411}
+  - component: {fileID: 1893792318861761412}
   m_Layer: 0
   m_Name: Character_Hero@Walk With Rifle (1)
   m_TagString: Player
@@ -1262,6 +1268,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.56610525, y: 1.6274297, z: 1.2621603}
   m_Center: {x: 0.10556948, y: 0.75367796, z: 0.13108015}
+--- !u!114 &1893792318861761412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226046415578202565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8113052e5eb064e9e76fedee8b4fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 728915226}
+  fireRate: 0.5
 --- !u!1 &2153343464291103341
 GameObject:
   m_ObjectHideFlags: 0
