@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Zombie : MonoBehaviour
 {
+
+    public AudioClip hitSound;
     public float velocidadAdelante = 5f;
     private Rigidbody rb;
     // Start is called before the first frame update
@@ -31,6 +33,7 @@ public class Zombie : MonoBehaviour
     {
         if (other.CompareTag("Bala"))
         {
+            AudioSource.PlayClipAtPoint(hitSound, transform.position);
             Destroy(gameObject);
         }
     }
