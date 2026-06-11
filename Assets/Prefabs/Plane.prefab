@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1294278887043924292}
   - component: {fileID: -2811652555762384595}
   - component: {fileID: 6044811422620762219}
+  - component: {fileID: 4387751663000616914}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Suelo
@@ -142,3 +143,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4387751663000616914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943076885337895299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc040f352ec89834abe0a796c1a0bb1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabsAutos:
+  - {fileID: 5248138311992829715, guid: b7beb2c50f4665a479c00b81336bd574, type: 3}
+  - {fileID: 8375999395427033462, guid: 92fec823c0f6e934389fca291200218d, type: 3}
+  - {fileID: 7145273098237566999, guid: b0e43b4cfd9ce48479ef47d55d8dd514, type: 3}
+  prefabZombie: {fileID: 1558214406326236592, guid: 7454bbf0f9d091342b8fe836497a74d1, type: 3}
+  carrilIzquierdo: -2
+  carrilCentro: 0
+  carrilDerecho: 2

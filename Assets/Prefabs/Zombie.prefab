@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 1510706656083996145}
   - component: {fileID: 7224721850575374786}
   m_Layer: 0
-  m_Name: Character_Zombie@Injured Run
+  m_Name: Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,7 +300,7 @@ Animator:
   m_GameObject: {fileID: 1558214406326236592}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5eed5a09cfeda7746b3d5b55a08a71f8, type: 2}
+  m_Controller: {fileID: 9100000, guid: e050703426688484f8f4eaea034b36f1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
