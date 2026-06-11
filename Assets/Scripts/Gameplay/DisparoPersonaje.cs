@@ -6,6 +6,8 @@ public class DisparoPersonaje : MonoBehaviour
 {
 
 
+
+    public AudioClip fireSound;
     public GameObject bulletPrefab;
     private float cooldown = 0f;
     public float fireRate = 0.5f;
@@ -17,6 +19,8 @@ public class DisparoPersonaje : MonoBehaviour
 
     void Start()
     {
+        
+
         rb = GetComponent<Rigidbody>();
     }
 
@@ -58,6 +62,8 @@ void Shoot()
     float finalBulletSpeed = actualForwardSpeed + velocidadProyectil;
 
     rbBullet.velocity = new Vector3(rb.velocity.x, rb.velocity.y, finalBulletSpeed);
+
+    AudioSource.PlayClipAtPoint(fireSound, transform.position, 0.75f);
 }
 
 

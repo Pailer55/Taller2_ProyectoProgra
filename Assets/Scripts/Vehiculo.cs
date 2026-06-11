@@ -4,7 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Vehiculo : MonoBehaviour
+
+
 {
+
+    public AudioClip hitSound;
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -17,6 +21,7 @@ public class Vehiculo : MonoBehaviour
     {
         if (other.CompareTag("Bala"))
         {
+            AudioSource.PlayClipAtPoint(hitSound, transform.position, 0.25f);
             Destroy(gameObject);
         }
     }
