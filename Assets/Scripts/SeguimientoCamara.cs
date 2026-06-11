@@ -8,11 +8,11 @@ public class SeguimientoCamara : MonoBehaviour
     public Transform jugador;
 
     [Header("Rotacion")]
-    public float inclinacion = 20f;
+    public float inclinacion = 25f;
 
     [Header("Offset")]
-    public float offsetY = 3f;   // altura de la camara
-    public float offsetZ = -3f;  // distancia detras del jugador
+    public float offsetY = 4f;   // altura de la camara
+    public float offsetZ = -3.5f;  // distancia detras del jugador
 
     void LateUpdate()
     {
