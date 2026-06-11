@@ -14,9 +14,9 @@ public class Bullet : MonoBehaviour
 
 
 // Al colisionar con cualquier objeto, reproduce un audio, una animacion, y se destruye
-void OnCollisionEnter(Collision collision) {
-
-    Destroy(gameObject);
+void OnTriggerEnter(Collider other) {
+  
+            Destroy(gameObject);     
 
     }
 }
