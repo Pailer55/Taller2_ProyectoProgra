@@ -23,12 +23,19 @@ public class Plataforma : MonoBehaviour
     void MoverAlFinal()
     {
         Plataforma[] todas = FindObjectsOfType<Plataforma>();
-        float maxZ = 0;
-        foreach (Plataforma p in todas)
-        {
-            if (p.transform.position.z > maxZ)
-                maxZ = p.transform.position.z;
-        }
-        transform.position = new Vector3(0, transform.position.y, maxZ + largoPlataforma);
+    float maxZ = 0;
+    foreach (Plataforma p in todas)
+    {
+        if (p.transform.position.z > maxZ)
+            maxZ = p.transform.position.z;
+    }
+    transform.position = new Vector3(0, transform.position.y, maxZ + largoPlataforma);
+
+    // Destruye el hijo anterior y spawnea uno nuevo
+    foreach (Transform hijo in transform)
+    {
+        Destroy(hijo.gameObject);
+    }
+    GetComponent<SpawnEntity>().Spawnear();
     }
 }

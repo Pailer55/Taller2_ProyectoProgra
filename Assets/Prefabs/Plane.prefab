@@ -160,6 +160,7 @@ MonoBehaviour:
   - {fileID: 8375999395427033462, guid: 92fec823c0f6e934389fca291200218d, type: 3}
   - {fileID: 7145273098237566999, guid: b0e43b4cfd9ce48479ef47d55d8dd514, type: 3}
   prefabZombie: {fileID: 1558214406326236592, guid: 7454bbf0f9d091342b8fe836497a74d1, type: 3}
+  prefabMoneda: {fileID: 1190865821557732250, guid: 30088e934ee234f4ead5c58c4144cf21, type: 3}
   carrilIzquierdo: -2
   carrilCentro: 0
   carrilDerecho: 2

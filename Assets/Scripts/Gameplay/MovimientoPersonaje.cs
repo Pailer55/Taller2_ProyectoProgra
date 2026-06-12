@@ -6,8 +6,8 @@ public class MovimientoPersonaje : MonoBehaviour
 {
     
     public float velocidadLateral = 5f;
-    public float velocidadAdelante = 5f;
-    public float fuerzaSalto = 3f;
+    public float velocidadAdelante = 8f;
+    public float fuerzaSalto = 5f;
     public bool estaEnSuelo = true;
     public Transform limiteIzq;
     public Transform limiteDer;
