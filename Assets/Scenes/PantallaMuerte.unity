@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 945852417}
   - component: {fileID: 945852419}
   - component: {fileID: 945852418}
-  - component: {fileID: 945852420}
+  - component: {fileID: 945852421}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -394,7 +394,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945852416}
   m_CullTransparentMesh: 1
---- !u!114 &945852420
+--- !u!114 &945852421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 945852416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc9a0198ccf9dad4f81e98c19448bdd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 5189c52413c44124dbc33f42e088eef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &954488601
@@ -558,8 +558,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 945852420}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
+      - m_Target: {fileID: 945852421}
+        m_TargetAssemblyTypeName: MenuSystem, Assembly-CSharp
         m_MethodName: salir
         m_Mode: 1
         m_Arguments:
@@ -791,7 +791,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1257340229
@@ -1103,8 +1103,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 945852420}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
+      - m_Target: {fileID: 945852421}
+        m_TargetAssemblyTypeName: MenuSystem, Assembly-CSharp
         m_MethodName: jugar
         m_Mode: 1
         m_Arguments:

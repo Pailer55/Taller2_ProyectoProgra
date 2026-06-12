@@ -44,8 +44,6 @@ public class GameManager : MonoBehaviour
             return;
         }
         Instance = this;
-
-        DontDestroyOnLoad(gameObject);
     }
     
     public void AgregarMonedas(int cantidadMonedas)
