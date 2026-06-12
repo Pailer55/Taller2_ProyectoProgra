@@ -42,21 +42,21 @@ public class DisparoPersonaje : MonoBehaviour
 }
 void Shoot()
 {
-    // 1. Set the exact offset distances
-    float distanceInFront = 0.5f; // How many units ahead of the player center
-    float heightOffset = 0.75f;    // Keeps it off the floor (chest/waist level)
 
-    // 2. Calculate position using the player's dynamic forward direction
+    float distanceInFront = 0.5f; 
+    float heightOffset = 0.75f;    
+
+
     Vector3 initialPosition = transform.position + (transform.forward * distanceInFront) + (Vector3.up * heightOffset);
 
-    // 3. Spawn the bullet asset at that calculated spot
+
     GameObject bullet = Instantiate(bulletPrefab, initialPosition, transform.rotation);
     Rigidbody rbBullet = bullet.GetComponent<Rigidbody>();
 
-    // 4. Safety net: make sure they still ignore each other's collision boxes
+
     Physics.IgnoreCollision(bullet.GetComponent<Collider>(), GetComponent<Collider>());
 
-    // 5. Apply the forward physics velocities we calculated earlier
+
     MovimientoPersonaje movimiento = GetComponent<MovimientoPersonaje>();
     float actualForwardSpeed = (movimiento != null) ? movimiento.velocidadAdelante : 0f;
     float finalBulletSpeed = actualForwardSpeed + velocidadProyectil;
