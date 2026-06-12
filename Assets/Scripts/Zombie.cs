@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Zombie : MonoBehaviour
 {
 
+    public string sceneName;
+
     public AudioClip hitSound;
     public float velocidadAdelante = 5f;
     private Rigidbody rb;
@@ -25,7 +27,7 @@ public class Zombie : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(sceneName);
         }
     }
 

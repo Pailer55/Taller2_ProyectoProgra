@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67e461a1df44bbb4da2c59d49dc38436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: PantallaMuerte
   hitSound: {fileID: 8300000, guid: 1b6889aeb692814428d1638a02bf6f50, type: 3}
   velocidadAdelante: 3
 --- !u!54 &1510706656083996145

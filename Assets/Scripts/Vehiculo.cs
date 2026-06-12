@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 public class Vehiculo : MonoBehaviour
 
 
+
 {
+
+    public string sceneName;
 
     public AudioClip hitSound;
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(sceneName);
         }
     }
 
